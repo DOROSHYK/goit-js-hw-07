@@ -2,35 +2,35 @@ const calkulate = {
     value: 0,
     increment () {
         console.log(this);
-        this.value += 2;
+        this.value += 1;
     },
 
     decrement() {
         console.log(this);
-        this.value -= 2;
+        this.value -= 1;
     },
 }
 
 // console.log(document);
-const incrementbtn = document.querySelector('.js_increment');
-console.log(incrementbtn);
+const decrementBtn = document.querySelector('[data-action="decrement"]');
+console.log(decrementBtn);
 
-const decrement = document.querySelector('.js_decrement');
-// console.log(decrement);
+const incrementBtn = document.querySelector('[data-action="increment"]');
+console.log(incrementBtn);
 
-const valueElement = document.querySelector('.start_value');
-// console.log(valueElement);
+const valueElement = document.querySelector('#value');
+console.log(valueElement);
 
-incrementbtn.addEventListener('click', () => {
-    // console.log('click on increment');
+incrementBtn.addEventListener('click', () => {
+    console.log('click on increment');
     calkulate.increment();
-    // console.log(calkulate);
+    console.log(calkulate);
     valueElement.textContent = calkulate.value;
 });
 
-decrement.addEventListener('click', () => {
-    // console.log('click on decrement')
+decrementBtn.addEventListener('click', () => {
+    console.log('click on decrement')
     calkulate.decrement();
-    // console.log(calkulate);
+    console.log(calkulate);
     valueElement.textContent = calkulate.value;
 });
