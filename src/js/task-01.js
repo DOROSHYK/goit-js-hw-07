@@ -1,3 +1,5 @@
+"use strict";
+
 const ulCategoriesEl = document.querySelector("#categories")
 console.log(ulCategoriesEl);
 

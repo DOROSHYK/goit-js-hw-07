@@ -1,3 +1,5 @@
+"use strict";
+
 const calkulate = {
     value: 0,
     increment () {
@@ -11,7 +13,7 @@ const calkulate = {
     },
 }
 
-// console.log(document);
+
 const decrementBtn = document.querySelector('[data-action="decrement"]');
 console.log(decrementBtn);
 

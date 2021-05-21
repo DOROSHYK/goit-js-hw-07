@@ -1,3 +1,5 @@
+"use strict";
+
 const images = [
   {
     url:
@@ -16,8 +18,45 @@ const images = [
   },
 ];
 
-// Используй массив объектов images для создания тегов img вложенных в li.
-// Для создания разметки используй шаблонные строки и insertAdjacentHTML().
+// Используй массив объектов images 
 
-// Все элементы галереи должны добавляться в DOM за одну операцию вставки.
-// Добавь минимальное оформление галереи флексбоксами или гридами через css-классы.
+// для создания тегов img вложенных в li.
+// Для создания разметки используй шаблонные 
+// строки и insertAdjacentHTML().
+
+// Все элементы галереи должны добавляться в DOM за одну операцию
+// вставки.
+// Добавь минимальное оформление галереи флексбоксами
+// или гридами через css - классы.
+
+const templateStrings = (({url, alt}) => `<li><img src = '${url}' alt = '${alt}' width = 300 height = 200></li>`);
+const createGalery = images.reduce((acc, item) => acc + templateStrings(item), '');
+const ulEl = document.querySelector('#gallery');
+ulEl.insertAdjacentHTML('afterbegin', createGalery);
+ ulEl.setAttribute('style', 'list-style: none', 'display: flex;')
+console.log(ulEl);
+
+//////////////////////////////////////////////////
+// version two
+/////////////////////////////////////////////////
+
+// const ulEl = document.querySelector('#gallery');
+//  ulEl.setAttribute('style', 'list-style: none', 'display: flex;')
+
+// const createGalery = images.map(ell => {
+//  const liEl = document.createElement('li');
+// const imgEl = document.createElement('img');
+//   liEl.appendChild(imgEl);
+  
+ 
+//   imgEl.setAttribute('src', ell.url);
+//   imgEl.setAttribute('alt', ell.alt);
+//   imgEl.setAttribute('width', '300px');
+
+//   ulEl.appendChild(liEl);
+// })
+// console.log(ulEl);
+ 
+
+  
+
