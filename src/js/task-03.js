@@ -36,8 +36,9 @@ ulEl.insertAdjacentHTML('afterbegin', createGalery);
  ulEl.setAttribute('style', 'list-style: none', 'display: flex;')
 console.log(ulEl);
 
+
 //////////////////////////////////////////////////
-// version two
+// version two for me
 /////////////////////////////////////////////////
 
 // const ulEl = document.querySelector('#gallery');
@@ -56,6 +57,8 @@ console.log(ulEl);
 //   ulEl.appendChild(liEl);
 // })
 // console.log(ulEl);
+
+
  
 
   

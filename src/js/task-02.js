@@ -18,16 +18,28 @@ const ulEllement = document.querySelector('#ingredients');
 console.log(ulEllement);
 
 
-const addIngredients = arr => {
-  for (let i = 0; i < arr.length; i += 1) {
-    // console.log(arr[i]);
-    const createLiEll = document.createElement('li');
-    console.log(createLiEll);
-    createLiEll.textContent = arr[i];
+// const addIngredients = arr => {
+//   for (let i = 0; i < arr.length; i += 1) {
+//     // console.log(arr[i]);
+//     const createLiEll = document.createElement('li');
+//     console.log(createLiEll);
+//     createLiEll.textContent = arr[i];
     
-    ulEllement.appendChild(createLiEll);
-  }
+//     ulEllement.appendChild(createLiEll);
+//   }
+// }
+// addIngredients(ingredients);
+
+/////2 варіант/////////////////
+
+const addIngredients = (ingredients, list) => {
+  ingredients.forEach((el) => {
+    
+    console.log(list);
+  const createLiEll = document.createElement('li');
+     createLiEll.textContent = el;
+    list.appendChild(createLiEll);
+  })
 }
+addIngredients(ingredients,ulEllement);
 
-
-addIngredients(ingredients);
