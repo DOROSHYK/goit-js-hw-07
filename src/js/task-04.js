@@ -12,8 +12,6 @@ const calkulate = {
         this.value -= 1;
     },
 }
-
-
 const decrementBtn = document.querySelector('[data-action="decrement"]');
 console.log(decrementBtn);
 
@@ -22,14 +20,12 @@ console.log(incrementBtn);
 
 const valueElement = document.querySelector('#value');
 console.log(valueElement);
-
 incrementBtn.addEventListener('click', () => {
     console.log('click on increment');
     calkulate.increment();
     console.log(calkulate);
     valueElement.textContent = calkulate.value;
 });
-
 decrementBtn.addEventListener('click', () => {
     console.log('click on decrement')
     calkulate.decrement();

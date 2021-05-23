@@ -9,7 +9,7 @@ const inputEl = document.querySelector('#name-input');
 
 inputEl.addEventListener('keyup', function (e) {
     const spanText = document.querySelector('#name-output');
-    if (inputEl.value === '') {
+    if (inputEl.value.trimStart() === '') {
         spanText.textContent = 'незнакомец';
     } else {
        spanText.textContent = e.target.value; 
