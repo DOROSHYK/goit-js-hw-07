@@ -8,7 +8,8 @@ const inputEl = document.querySelector('#validation-input');
 const dataInput = inputEl.getAttribute('data-length');
 inputEl.addEventListener('blur', event => {
     if (event.currentTarget.value.length === 6) {
-        inputEl.classList.add('valid')
+        inputEl.classList.add('valid');
+        inputEl.classList.remove('invalid');
     } else {
         inputEl.classList.remove('valid');
         inputEl.classList.add('invalid')

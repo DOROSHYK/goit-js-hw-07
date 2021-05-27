@@ -31,15 +31,15 @@ console.log(ulEllement);
 // addIngredients(ingredients);
 
 /////2 варіант/////////////////
+ 
 
-const addIngredients = (ingredients, list) => {
-  ingredients.forEach((el) => {
-    
-    console.log(list);
-  const createLiEll = document.createElement('li');
-     createLiEll.textContent = el;
-    list.appendChild(createLiEll);
+  ingredients.forEach((el) => {  
+ const createLiEll = document.createElement('li');
+     createLiEll.textContent = el ;
+   ulEllement.appendChild(createLiEll);
   })
-}
-addIngredients(ingredients,ulEllement);
+  
+
+ 
+
 

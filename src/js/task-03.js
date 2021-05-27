@@ -36,6 +36,14 @@ ulEl.insertAdjacentHTML('afterbegin', createGalery);
  ulEl.setAttribute('style', 'list-style: none', 'display: flex;')
 console.log(ulEl);
 
+// const imageEl = document.querySelector('#gallery');
+// let strok = '';
+// const imagePars = images.forEach(elem => {
+//    strok += `<li><img src = '${elem.url}' alt = '${elem.alt}' width = '360' height = '320'> </li>`
+// });
+// imageEl.insertAdjacentHTML('afterbegin', strok);
+// imageEl.setAttribute('style', 'list-style: none', 'display: flex;');
+// console.log(imageEl);
 
 //////////////////////////////////////////////////
 // version two for me
